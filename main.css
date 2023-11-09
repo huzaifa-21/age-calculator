@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "open-sans", sans-serif;
+}
+
+.container {
+  padding: 30px 50px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 15px;
+  border-bottom-right-radius: 143px 147px;
+  width: 725px;
+}
+@media (max-width: 676px) {
+  .container {
+    width: 380px;
+    width: 380px;
+    margin: 100px auto;
+    padding: 25px 26px;
+    border-bottom-right-radius: 90px 78px;
+  }
+}
+.container form {
+  position: relative;
+  padding: 10px 0 50px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+.container form div {
+  position: relative;
+}
+.container form div label {
+  position: absolute;
+  font-size: 11px;
+  top: -19px;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 5px;
+  font-weight: bold;
+  left: 0;
+}
+.container form div input[type=text] {
+  padding: 10px 20px;
+  font-size: 32px;
+  width: 155px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 676px) {
+  .container form div input[type=text] {
+    font-size: 19px;
+    width: 95px;
+  }
+}
+.container form div input[type=text]:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.container form div span {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  font-size: 12px;
+  font-style: italic;
+}
+.container form svg {
+  font-size: 11px;
+  padding: 15px;
+  bottom: -36px;
+  right: -15px;
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+@media (max-width: 676px) {
+  .container form svg {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+  }
+}
+.container section {
+  margin-top: 65px;
+}
+.container section div {
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+}
+@media (max-width: 676px) {
+  .container section div {
+    font-size: 57px;
+  }
+}
+.container section div span:not(.date) {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 10px;
+}
+.container section div span.date {
+  color: 0;
+}
+
+@media (max-width: 676px) {
+  .empty,
+  .valid-message,
+  .past {
+    font-size: 9px !important;
+    bottom: -17px !important;
+  }
+}
+.not-valid {
+  border: 1px solid hsl(0, 100%, 67%) !important;
+}
+.not-valid ~ .valid-message {
+  color: hsl(0, 100%, 67%) !important;
+  display: block !important;
+}
+.not-valid ~ .valid-message ~ .empty {
+  display: none !important;
+}
+.not-valid ~ label {
+  color: hsl(0, 100%, 67%) !important;
+}
+
+.required {
+  position: relative;
+  border: 1px solid hsl(0, 100%, 67%) !important;
+}
+.required + label {
+  color: hsl(0, 100%, 67%) !important;
+}
+.required + label ~ .valid-message {
+  display: none !important;
+}
+.required + label ~ .empty {
+  color: hsl(0, 100%, 67%) !important;
+  display: block !important;
+}
+
+.past-show {
+  border: 1px solid hsl(0, 100%, 67%) !important;
+}
+.past-show + label {
+  color: hsl(0, 100%, 67%) !important;
+}
+.past-show + label ~ .valid-message {
+  display: none !important;
+}
+.past-show + label ~ .empty {
+  color: hsl(0, 100%, 67%) !important;
+  display: none !important;
+}
+.past-show + label ~ .past {
+  color: hsl(0, 100%, 67%);
+  display: block !important;
+}/*# sourceMappingURL=main.css.map */
