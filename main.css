@@ -11,6 +11,28 @@ body {
   font-family: "open-sans", sans-serif;
 }
 
+.info {
+  margin-bottom: -50px;
+  margin-top: 30px;
+}
+.info .entry {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.info #name {
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  padding: 15px;
+  font-size: 18px;
+  border: 0.3px solid #777;
+  border-radius: 8px;
+}
+.info #name:focus {
+  outline: none;
+}
+
 .container {
   padding: 30px 50px;
   margin: 100px auto;
@@ -172,4 +194,15 @@ body {
 .past-show + label ~ .past {
   color: hsl(0, 100%, 67%);
   display: block !important;
+}
+
+.name-value {
+  font-size: 35px !important;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.name-value span {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: normal !important;
 }/*# sourceMappingURL=main.css.map */

@@ -1,77 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Age calculator app</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">
-  <title>Frontend Mentor | Age calculator app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-    <header>
-      <form action="" novalidate>
+  <body>
+    <div class="info">
+      <p class="entry">اسمك واخمن تاريخ ميلادك</p>
+      <input
+        type="text"
+        placeholder="Name"
+        name=""
+        id="name"
+        autocomplete="off"
+      />
+    </div>
+    <div class="container">
+      <header>
+        <form action="" novalidate autocomplete="off">
+          <div>
+            <input
+              type="text"
+              name=""
+              id="day"
+              placeholder="DD"
+              autocomplete="cc-number"
+            />
+            <label for="day">DAY</label>
+            <span class="valid-message">Must be a valid day</span>
+            <span class="empty">This field is required</span>
+          </div>
+          <div>
+            <input
+              type="text"
+              name=""
+              id="month"
+              placeholder="MM"
+              autocomplete="cc-number"
+            />
+            <label for="day">MONTH</label>
+            <span class="valid-message">Must be a valid month</span>
+            <span class="empty">This field is required</span>
+          </div>
+          <div>
+            <input
+              type="text"
+              name=""
+              id="year"
+              maxlength="4"
+              placeholder="YYYY"
+              autocomplete="cc-number"
+            />
+            <label for="year">YEAR</label>
+            <span class="past">Must be in the past</span>
+            <span class="valid-message">Must be a valid year</span>
+            <span class="empty">This field is required</span>
+          </div>
+          <input type="submit" value="" id="submit" hidden />
+          <label for="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </label>
+        </form>
+      </header>
+      <section>
+        <div class="name-value" dir="rtl"></div>
+        <div><span class="years">--</span><span class="date">years</span></div>
         <div>
-          <input type="text" name="" id="day" placeholder="DD" autocomplete="cc-number">
-          <label for="day">DAY</label>
-          <span class="valid-message">Must be a valid day</span>
-          <span class="empty">This field is required</span>
+          <span class="months">--</span><span class="date">months</span>
         </div>
-        <div>
-          <input type="text" name="" id="month" placeholder="MM" autocomplete="cc-number">
-          <label for="day">MONTH</label>
-          <span class="valid-message">Must be a valid month</span>
-          <span class="empty">This field is required</span>
-        </div>
-        <div>
-          <input type="text" name="" id="year" maxlength="4" placeholder="YYYY" autocomplete="cc-number">
-          <label for="year">YEAR</label>
-          <span class="past">Must be in the past</span>
-          <span class="valid-message">Must be a valid year</span>
-          <span class="empty">This field is required</span>
-        </div>
-        <input type="submit" value="" id="submit" hidden>
-        <label for="submit">
-          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
-            <g fill="none" stroke="#FFF" stroke-width="2">
-              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
-            </g>
-          </svg>
-        </label>
-      </form>
-    </header>
-    <section>
-      <div>
-        <span class="years">--</span><span class="date">years</span>
-      </div>
-      <div>
-        <span class="months">--</span><span class="date">months</span>
-      </div>
-      <div>
-        <span class="dayes">--</span><span class="date">days</span>
-      </div>
-    </section>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">huzaifa salah</a>.
-  </div>
-  <script src="main.js"></script>
-</body>
-
+        <div><span class="days">--</span><span class="date">days</span></div>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
